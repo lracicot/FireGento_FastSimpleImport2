@@ -112,9 +112,7 @@ class Importer
     public function processImport($dataArray)
     {
         $validation = $this->_validateData($dataArray);
-        if ($validation) {
-            $this->_importData();
-        }
+        $this->_importData();
 
         return $validation;
     }
